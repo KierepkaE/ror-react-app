@@ -1,6 +1,6 @@
 class Api::V1::FruitsController < ApplicationController
   def index
-    render json: fruit
+    render json: Fruit.all
   end
 
   def create
